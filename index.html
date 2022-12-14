@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
+    <title>Color Picker</title>
+</head>
+
+<body class="bg-[#1e1e1e]">
+    <div class="p-10">
+        <h1 class="px-5 text-xl font-bold text-white  border-[#03c6c7] border-solid border-4 p-2 inline-block">ColorPicker</h1>
+    </div>
+
+    <div class="mt-8">
+        <h1 class="text-3xl md:text-6xl text-white font-bold text-center">Click to Copy Color</h1>
+        <h4 class="text-xl mt-3 md:mt-7 md:text-3xl text-white font-bold text-center p-2">Copied Color : 
+            <span class="text-xl md:text-3xl text-white font-bold text-center colorcode"></span></h4>
+    </div>
+
+    <!-- RED Color Pallet -->
+    <div class=" mt-20">
+        <!-- red pallet 1 -->
+        <div class=" grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 items-center gap-5">
+            <div class="flex flex-col justify-center items-center">
+                <div
+                    class="md:h-[300px] md:w-[170px] h-[200px] w-[113px]  bg-red-900 rounded-xl cursor-pointer hover:scale-105 duration-500 red1">
+                </div>
+                <h4 class="text-xl text-white mt-3 font-bold text-center textCode">#7f1d1d</h4>
+            </div>
+            <div class="flex flex-col justify-center items-center">
+                <div
+                    class=" md:h-[300px] md:w-[170px] h-[200px] w-[113px]  bg-red-800 rounded-xl cursor-pointer hover:scale-105 duration-500 red2">
+                </div>
+                <h4 class="text-xl text-white mt-3 font-bold text-center textCode">#991b1b</h4>
+            </div>
+            <div class="flex flex-col justify-center items-center">
+                <div
+                    class="md:h-[300px] md:w-[170px] h-[200px] w-[113px]  bg-red-700 rounded-xl cursor-pointer hover:scale-105 duration-500 red3">
+                </div>
+                <h4 class="text-xl text-white mt-3 font-bold text-center textCode">#b91c1c</h4>
+            </div>
+            <div class="flex flex-col justify-center items-center">
+                <div
+                    class="md:h-[300px] md:w-[170px] h-[200px] w-[113px]  bg-red-600 rounded-xl cursor-pointer hover:scale-105 duration-500 red4">
+                </div>
+                <h4 class="text-xl text-white mt-3 font-bold text-center textCode">#dc2626</h4>
+            </div>
+            <div class="flex flex-col justify-center items-center">
+                <div
+                    class="md:h-[300px] md:w-[170px] h-[200px] w-[113px]  bg-red-500 rounded-xl cursor-pointer hover:scale-105 duration-500 red5">
+                </div>
+                <h4 class="text-xl text-white mt-3 font-bold text-center textCode">#ef4444</h4>
+            </div>
+            <div class="flex flex-col justify-center items-center">
+                <div
+                    class="md:h-[300px] md:w-[170px] h-[200px] w-[113px]  bg-red-400 rounded-xl cursor-pointer hover:scale-105 duration-500 red6">
+                </div>
+                <h4 class="text-xl text-white mt-3 font-bold text-center textCode">#f87171</h4>
+            </div>
+        </div>
+
+        <!-- red pallet 2 -->
+        <div class=" grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 items-center gap-5 mt-10">
+            <div class="flex flex-col justify-center items-center">
+                <div
+                    class="md:h-[300px] md:w-[170px] h-[200px] w-[113px]  bg-[#eb4d4b] rounded-xl cursor-pointer hover:scale-105 duration-500 red7">
+                </div>
+                <h4 class="text-xl text-white mt-3 font-bold text-center textCode">#eb4d4b</h4>
+            </div>
+            <div class="flex flex-col justify-center items-center">
+                <div
+                    class=" md:h-[300px] md:w-[170px] h-[200px] w-[113px]  bg-[#ef5354] rounded-xl cursor-pointer hover:scale-105 duration-500 red8">
+                </div>
+                <h4 class="text-xl text-white mt-3 font-bold text-center textCode">#ef5354</h4>
+            </div>
+            <div class="flex flex-col justify-center items-center">
+                <div
+                    class="md:h-[300px] md:w-[170px] h-[200px] w-[113px]  bg-[#b4161b] rounded-xl cursor-pointer hover:scale-105 duration-500 red9">
+                </div>
+                <h4 class="text-xl text-white mt-3 font-bold text-center textCode">#b4161b</h4>
+            </div>
+            <div class="flex flex-col justify-center items-center">
+                <div
+                    class="md:h-[300px] md:w-[170px] h-[200px] w-[113px]  bg-[#e6425e] rounded-xl cursor-pointer hover:scale-105 duration-500 red10">
+                </div>
+                <h4 class="text-xl text-white mt-3 font-bold text-center textCode">#e6425e</h4>
+            </div>
+            <div class="flex flex-col justify-center items-center">
+                <div
+                    class="md:h-[300px] md:w-[170px] h-[200px] w-[113px]  bg-[#e83a59] rounded-xl cursor-pointer hover:scale-105 duration-500 red11">
+                </div>
+                <h4 class="text-xl text-white mt-3 font-bold text-center textCode">#e83a59</h4>
+            </div>
+            <div class="flex flex-col justify-center items-center">
+                <div
+                    class="md:h-[300px] md:w-[170px] h-[200px] w-[113px]  bg-[#b9345a] rounded-xl cursor-pointer hover:scale-105 duration-500 red12">
+                </div>
+                <h4 class="text-xl text-white mt-3 font-bold text-center textCode">#b9345a</h4>
+            </div>
+        </div>
+    </div>  
+    
+    <!------------------------------- Blue Color Pallet ------------------------- -->
+    <div class=" mt-10">
+        <!-- blue pallet 1 -->
+        <div class=" grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 items-center gap-5">
+            <div class="flex flex-col justify-center items-center">
+                <div
+                    class="md:h-[300px] md:w-[170px] h-[200px] w-[113px]  bg-blue-900 rounded-xl cursor-pointer hover:scale-105 duration-500 blue1">
+                </div>
+                <h4 class="text-xl text-white mt-3 font-bold text-center textCode">#1e3a8a</h4>
+            </div>
+            <div class="flex flex-col justify-center items-center">
+                <div
+                    class=" md:h-[300px] md:w-[170px] h-[200px] w-[113px]  bg-blue-800 rounded-xl cursor-pointer hover:scale-105 duration-500 blue2">
+                </div>
+                <h4 class="text-xl text-white mt-3 font-bold text-center textCode">#1e40af</h4>
+            </div>
+            <div class="flex flex-col justify-center items-center">
+                <div
+                    class="md:h-[300px] md:w-[170px] h-[200px] w-[113px]  bg-blue-700 rounded-xl cursor-pointer hover:scale-105 duration-500 blue3">
+                </div>
+                <h4 class="text-xl text-white mt-3 font-bold text-center textCode">#1d4ed8</h4>
+            </div>
+            <div class="flex flex-col justify-center items-center">
+                <div
+                    class="md:h-[300px] md:w-[170px] h-[200px] w-[113px]  bg-blue-600 rounded-xl cursor-pointer hover:scale-105 duration-500 blue4">
+                </div>
+                <h4 class="text-xl text-white mt-3 font-bold text-center textCode">#2563eb</h4>
+            </div>
+            <div class="flex flex-col justify-center items-center">
+                <div
+                    class="md:h-[300px] md:w-[170px] h-[200px] w-[113px]  bg-blue-500 rounded-xl cursor-pointer hover:scale-105 duration-500 blue5">
+                </div>
+                <h4 class="text-xl text-white mt-3 font-bold text-center textCode">#3b82f6</h4>
+            </div>
+            <div class="flex flex-col justify-center items-center">
+                <div
+                    class="md:h-[300px] md:w-[170px] h-[200px] w-[113px]  bg-blue-400 rounded-xl cursor-pointer hover:scale-105 duration-500 blue6">
+                </div>
+                <h4 class="text-xl text-white mt-3 font-bold text-center textCode">#60a5fa</h4>
+            </div>
+        </div>
+
+        <!-- blue pallet 2 -->
+        <div class=" grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 items-center gap-5 mt-10">
+            <div class="flex flex-col justify-center items-center">
+                <div
+                    class="md:h-[300px] md:w-[170px] h-[200px] w-[113px]  bg-[#1b98f5] rounded-xl cursor-pointer hover:scale-105 duration-500 blue7">
+                </div>
+                <h4 class="text-xl text-white mt-3 font-bold text-center textCode">#1b98f5</h4>
+            </div>
+            <div class="flex flex-col justify-center items-center">
+                <div
+                    class=" md:h-[300px] md:w-[170px] h-[200px] w-[113px]  bg-[#3944f7] rounded-xl cursor-pointer hover:scale-105 duration-500 blue8">
+                </div>
+                <h4 class="text-xl text-white mt-3 font-bold text-center textCode">#3944f7</h4>
+            </div>
+            <div class="flex flex-col justify-center items-center">
+                <div
+                    class="md:h-[300px] md:w-[170px] h-[200px] w-[113px]  bg-[#2827cc] rounded-xl cursor-pointer hover:scale-105 duration-500 blue9">
+                </div>
+                <h4 class="text-xl text-white mt-3 font-bold text-center textCode">#2827cc</h4>
+            </div>
+            <div class="flex flex-col justify-center items-center">
+                <div
+                    class="md:h-[300px] md:w-[170px] h-[200px] w-[113px]  bg-[#120e43] rounded-xl cursor-pointer hover:scale-105 duration-500 blue10">
+                </div>
+                <h4 class="text-xl text-white mt-3 font-bold text-center textCode">#120e43</h4>
+            </div>
+            <div class="flex flex-col justify-center items-center">
+                <div
+                    class="md:h-[300px] md:w-[170px] h-[200px] w-[113px]  bg-[#383cc1] rounded-xl cursor-pointer hover:scale-105 duration-500 blue11">
+                </div>
+                <h4 class="text-xl text-white mt-3 font-bold text-center textCode">#383cc1</h4>
+            </div>
+            <div class="flex flex-col justify-center items-center">
+                <div
+                    class="md:h-[300px] md:w-[170px] h-[200px] w-[113px]  bg-[#03203c] rounded-xl cursor-pointer hover:scale-105 duration-500 blue12">
+                </div>
+                <h4 class="text-xl text-white mt-3 font-bold text-center textCode">#03203c</h4>
+            </div>
+        </div>
+    </div>
+
+    <!------------------------------- Yellow Color Pallet ------------------------- -->
+    <div class=" mt-10">
+        <!-- yellow pallet 1 -->
+        <div class=" grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 items-center gap-5">
+            <div class="flex flex-col justify-center items-center">
+                <div
+                    class="md:h-[300px] md:w-[170px] h-[200px] w-[113px]  bg-yellow-900 rounded-xl cursor-pointer hover:scale-105 duration-500 yellow1">
+                </div>
+                <h4 class="text-xl text-white mt-3 font-bold text-center textCode">#713f12</h4>
+            </div>
+            <div class="flex flex-col justify-center items-center">
+                <div
+                    class=" md:h-[300px] md:w-[170px] h-[200px] w-[113px]  bg-yellow-800 rounded-xl cursor-pointer hover:scale-105 duration-500 yellow2">
+                </div>
+                <h4 class="text-xl text-white mt-3 font-bold text-center textCode">#854d0e</h4>
+            </div>
+            <div class="flex flex-col justify-center items-center">
+                <div
+                    class="md:h-[300px] md:w-[170px] h-[200px] w-[113px]  bg-yellow-700 rounded-xl cursor-pointer hover:scale-105 duration-500 yellow3">
+                </div>
+                <h4 class="text-xl text-white mt-3 font-bold text-center textCode">#a16207</h4>
+            </div>
+            <div class="flex flex-col justify-center items-center">
+                <div
+                    class="md:h-[300px] md:w-[170px] h-[200px] w-[113px]  bg-yellow-600 rounded-xl cursor-pointer hover:scale-105 duration-500 yellow4">
+                </div>
+                <h4 class="text-xl text-white mt-3 font-bold text-center textCode">#ca8a04</h4>
+            </div>
+            <div class="flex flex-col justify-center items-center">
+                <div
+                    class="md:h-[300px] md:w-[170px] h-[200px] w-[113px]  bg-yellow-500 rounded-xl cursor-pointer hover:scale-105 duration-500 yellow5">
+                </div>
+                <h4 class="text-xl text-white mt-3 font-bold text-center textCode">#eab308</h4>
+            </div>
+            <div class="flex flex-col justify-center items-center">
+                <div
+                    class="md:h-[300px] md:w-[170px] h-[200px] w-[113px]  bg-yellow-400 rounded-xl cursor-pointer hover:scale-105 duration-500 yellow6">
+                </div>
+                <h4 class="text-xl text-white mt-3 font-bold text-center textCode">#facc15</h4>
+            </div>
+        </div>
+
+        <!-- yellow pallet 2 -->
+        <div class=" grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 items-center gap-5 mt-10">
+            <div class="flex flex-col justify-center items-center">
+                <div
+                    class="md:h-[300px] md:w-[170px] h-[200px] w-[113px]  bg-[#e8bd0d] rounded-xl cursor-pointer hover:scale-105 duration-500 yellow7">
+                </div>
+                <h4 class="text-xl text-white mt-3 font-bold text-center textCode">#e8bd0d</h4>
+            </div>
+            <div class="flex flex-col justify-center items-center">
+                <div
+                    class=" md:h-[300px] md:w-[170px] h-[200px] w-[113px]  bg-[#f7cd2e] rounded-xl cursor-pointer hover:scale-105 duration-500 yellow8">
+                </div>
+                <h4 class="text-xl text-white mt-3 font-bold text-center textCode">#f7cd2e</h4>
+            </div>
+            <div class="flex flex-col justify-center items-center">
+                <div
+                    class="md:h-[300px] md:w-[170px] h-[200px] w-[113px]  bg-[#f4be2c] rounded-xl cursor-pointer hover:scale-105 duration-500 yellow9">
+                </div>
+                <h4 class="text-xl text-white mt-3 font-bold text-center textCode">#f4be2c</h4>
+            </div>
+            <div class="flex flex-col justify-center items-center">
+                <div
+                    class="md:h-[300px] md:w-[170px] h-[200px] w-[113px]  bg-[#c7c11a] rounded-xl cursor-pointer hover:scale-105 duration-500 yellow10">
+                </div>
+                <h4 class="text-xl text-white mt-3 font-bold text-center textCode">#c7c11a</h4>
+            </div>
+            <div class="flex flex-col justify-center items-center">
+                <div
+                    class="md:h-[300px] md:w-[170px] h-[200px] w-[113px]  bg-[#ddd101] rounded-xl cursor-pointer hover:scale-105 duration-500 yellow11">
+                </div>
+                <h4 class="text-xl text-white mt-3 font-bold text-center textCode">#ddd101</h4>
+            </div>
+            <div class="flex flex-col justify-center items-center">
+                <div
+                    class="md:h-[300px] md:w-[170px] h-[200px] w-[113px]  bg-[#a77b06] rounded-xl cursor-pointer hover:scale-105 duration-500 yellow12">
+                </div>
+                <h4 class="text-xl text-white mt-3 font-bold text-center textCode">#a77b06</h4>
+            </div>
+        </div>
+    </div>
+
+    <!------------------------------- Green Color Pallet ------------------------- -->
+    <div class=" mt-10">
+        <!-- Green pallet 1 -->
+        <div class=" grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 items-center gap-5">
+            <div class="flex flex-col justify-center items-center">
+                <div
+                    class="md:h-[300px] md:w-[170px] h-[200px] w-[113px]  bg-green-900 rounded-xl cursor-pointer hover:scale-105 duration-500 green1">
+                </div>
+                <h4 class="text-xl text-white mt-3 font-bold text-center textCode">#14532d</h4>
+            </div>
+            <div class="flex flex-col justify-center items-center">
+                <div
+                    class=" md:h-[300px] md:w-[170px] h-[200px] w-[113px]  bg-green-800 rounded-xl cursor-pointer hover:scale-105 duration-500 green2">
+                </div>
+                <h4 class="text-xl text-white mt-3 font-bold text-center textCode">#166534</h4>
+            </div>
+            <div class="flex flex-col justify-center items-center">
+                <div
+                    class="md:h-[300px] md:w-[170px] h-[200px] w-[113px]  bg-green-700 rounded-xl cursor-pointer hover:scale-105 duration-500 green3">
+                </div>
+                <h4 class="text-xl text-white mt-3 font-bold text-center textCode">#15803d</h4>
+            </div>
+            <div class="flex flex-col justify-center items-center">
+                <div
+                    class="md:h-[300px] md:w-[170px] h-[200px] w-[113px]  bg-green-600 rounded-xl cursor-pointer hover:scale-105 duration-500 green4">
+                </div>
+                <h4 class="text-xl text-white mt-3 font-bold text-center textCode">#16a34a</h4>
+            </div>
+            <div class="flex flex-col justify-center items-center">
+                <div
+                    class="md:h-[300px] md:w-[170px] h-[200px] w-[113px]  bg-green-500 rounded-xl cursor-pointer hover:scale-105 duration-500 green5">
+                </div>
+                <h4 class="text-xl text-white mt-3 font-bold text-center textCode">#22c55e</h4>
+            </div>
+            <div class="flex flex-col justify-center items-center">
+                <div
+                    class="md:h-[300px] md:w-[170px] h-[200px] w-[113px]  bg-green-400 rounded-xl cursor-pointer hover:scale-105 duration-500 green6">
+                </div>
+                <h4 class="text-xl text-white mt-3 font-bold text-center textCode">#4ade80</h4>
+            </div>
+        </div>
+
+        <!-- green pallet 2 -->
+        <div class=" grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 items-center gap-5 mt-10">
+            <div class="flex flex-col justify-center items-center">
+                <div
+                    class="md:h-[300px] md:w-[170px] h-[200px] w-[113px]  bg-[#1faa59] rounded-xl cursor-pointer hover:scale-105 duration-500 green7">
+                </div>
+                <h4 class="text-xl text-white mt-3 font-bold text-center textCode">#1faa59</h4>
+            </div>
+            <div class="flex flex-col justify-center items-center">
+                <div
+                    class=" md:h-[300px] md:w-[170px] h-[200px] w-[113px]  bg-[#66ad47] rounded-xl cursor-pointer hover:scale-105 duration-500 green8">
+                </div>
+                <h4 class="text-xl text-white mt-3 font-bold text-center textCode">#66ad47</h4>
+            </div>
+            <div class="flex flex-col justify-center items-center">
+                <div
+                    class="md:h-[300px] md:w-[170px] h-[200px] w-[113px]  bg-[#4dd637] rounded-xl cursor-pointer hover:scale-105 duration-500 green9">
+                </div>
+                <h4 class="text-xl text-white mt-3 font-bold text-center textCode">#4dd637</h4>
+            </div>
+            <div class="flex flex-col justify-center items-center">
+                <div
+                    class="md:h-[300px] md:w-[170px] h-[200px] w-[113px]  bg-[#6ec72d] rounded-xl cursor-pointer hover:scale-105 duration-500 green10">
+                </div>
+                <h4 class="text-xl text-white mt-3 font-bold text-center textCode">#6ec72d</h4>
+            </div>
+            <div class="flex flex-col justify-center items-center">
+                <div
+                    class="md:h-[300px] md:w-[170px] h-[200px] w-[113px]  bg-[#3dbe29] rounded-xl cursor-pointer hover:scale-105 duration-500 green11">
+                </div>
+                <h4 class="text-xl text-white mt-3 font-bold text-center textCode">#3dbe29</h4>
+            </div>
+            <div class="flex flex-col justify-center items-center">
+                <div
+                    class="md:h-[300px] md:w-[170px] h-[200px] w-[113px]  bg-[#00d84a] rounded-xl cursor-pointer hover:scale-105 duration-500 green12">
+                </div>
+                <h4 class="text-xl text-white mt-3 font-bold text-center textCode">#00d84a</h4>
+            </div>
+        </div>
+    </div>
+
+    <!------------------------------- Fancy Color Pallet ------------------------- -->
+    <div class=" mt-10">
+        <!-- fancy pallet 1 -->
+        <div class=" grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 items-center gap-5">
+            <div class="flex flex-col justify-center items-center">
+                <div
+                    class="md:h-[300px] md:w-[170px] h-[200px] w-[113px]  bg-[#8d3daf] rounded-xl cursor-pointer hover:scale-105 duration-500 fancy1">
+                </div>
+                <h4 class="text-xl text-white mt-3 font-bold text-center textCode">#8d3daf</h4>
+            </div>
+            <div class="flex flex-col justify-center items-center">
+                <div
+                    class=" md:h-[300px] md:w-[170px] h-[200px] w-[113px]  bg-[#e07c24] rounded-xl cursor-pointer hover:scale-105 duration-500 fancy2">
+                </div>
+                <h4 class="text-xl text-white mt-3 font-bold text-center textCode">#e07c24</h4>
+            </div>
+            <div class="flex flex-col justify-center items-center">
+                <div
+                    class="md:h-[300px] md:w-[170px] h-[200px] w-[113px]  bg-[#758283] rounded-xl cursor-pointer hover:scale-105 duration-500 fancy3">
+                </div>
+                <h4 class="text-xl text-white mt-3 font-bold text-center textCode">#758283</h4>
+            </div>
+            <div class="flex flex-col justify-center items-center">
+                <div
+                    class="md:h-[300px] md:w-[170px] h-[200px] w-[113px]  bg-[#e03b8b] rounded-xl cursor-pointer hover:scale-105 duration-500 fancy4">
+                </div>
+                <h4 class="text-xl text-white mt-3 font-bold text-center textCode">#e03b8b</h4>
+            </div>
+            <div class="flex flex-col justify-center items-center">
+                <div
+                    class="md:h-[300px] md:w-[170px] h-[200px] w-[113px]  bg-[#ff6666] rounded-xl cursor-pointer hover:scale-105 duration-500 fancy5">
+                </div>
+                <h4 class="text-xl text-white mt-3 font-bold text-center textCode">#ff6666</h4>
+            </div>
+            <div class="flex flex-col justify-center items-center">
+                <div
+                    class="md:h-[300px] md:w-[170px] h-[200px] w-[113px]  bg-[#242b2e] rounded-xl cursor-pointer hover:scale-105 duration-500 fancy6">
+                </div>
+                <h4 class="text-xl text-white mt-3 font-bold text-center textCode">#242b2e</h4>
+            </div>
+        </div>
+
+        <!-- green pallet 2 -->
+        <div class=" grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 items-center gap-5 mt-10">
+            <div class="flex flex-col justify-center items-center">
+                <div
+                    class="md:h-[300px] md:w-[170px] h-[200px] w-[113px]  bg-[#03c6c7] rounded-xl cursor-pointer hover:scale-105 duration-500 fancy7">
+                </div>
+                <h4 class="text-xl text-white mt-3 font-bold text-center textCode">#03c6c7</h4>
+            </div>
+            <div class="flex flex-col justify-center items-center">
+                <div
+                    class=" md:h-[300px] md:w-[170px] h-[200px] w-[113px]  bg-[#5a20cb] rounded-xl cursor-pointer hover:scale-105 duration-500 fancy8">
+                </div>
+                <h4 class="text-xl text-white mt-3 font-bold text-center textCode">#5a20cb</h4>
+            </div>
+            <div class="flex flex-col justify-center items-center">
+                <div
+                    class="md:h-[300px] md:w-[170px] h-[200px] w-[113px]  bg-[#6a1b4d] rounded-xl cursor-pointer hover:scale-105 duration-500 fancy9">
+                </div>
+                <h4 class="text-xl text-white mt-3 font-bold text-center textCode">#6a1b4d</h4>
+            </div>
+            <div class="flex flex-col justify-center items-center">
+                <div
+                    class="md:h-[300px] md:w-[170px] h-[200px] w-[113px]  bg-[#cad5e2] rounded-xl cursor-pointer hover:scale-105 duration-500 fancy10">
+                </div>
+                <h4 class="text-xl text-white mt-3 font-bold text-center textCode">#cad5e2</h4>
+            </div>
+            <div class="flex flex-col justify-center items-center">
+                <div
+                    class="md:h-[300px] md:w-[170px] h-[200px] w-[113px]  bg-[#35bdd0] rounded-xl cursor-pointer hover:scale-105 duration-500 fancy11">
+                </div>
+                <h4 class="text-xl text-white mt-3 font-bold text-center textCode">#35bdd0</h4>
+            </div>
+            <div class="flex flex-col justify-center items-center">
+                <div
+                    class="md:h-[300px] md:w-[170px] h-[200px] w-[113px]  bg-[#0d0d0d] rounded-xl cursor-pointer hover:scale-105 duration-500 fancy12">
+                </div>
+                <h4 class="text-xl text-white mt-3 font-bold text-center textCode">#0d0d0d</h4>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="bg-black mt-10 md:h-[50px] flex items-center justify-center">
+        <h3 class="text-md text-[#facc15] font-semibold text-center  ">Made with ❤️ by Rahul Kumar</h3>
+    </footer>
+    <script src="index.js"></script>
+</body>
+
+</html>
